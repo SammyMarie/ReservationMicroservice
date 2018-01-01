@@ -1,0 +1,10 @@
+applications:
+- name: reservationmicroservices
+  memory: 900M
+  instances: 1
+  path: ./build/libs/reservationmicroservices-0.0.1-SNAPSHOT.jar
+  services:
+  - MongoDB
+  - RabbitMQ
+  - EurekaServer
+  - ConfigServer
